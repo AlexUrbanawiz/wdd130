@@ -1,0 +1,70 @@
+
+body {
+    background-color:cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+#quote1 {
+    width: 900px;
+    margin: 0 auto;
+}
+#quote1-text {
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4 {
+    text-align: center;
+    color: white;
+}
+
+#list {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.list-text {
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+
+
+img {
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+#quote2 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#quote2-text {
+    font-size: 24px;
+    color: white;
+    width: 225px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer {
+    text-align: center;
+}
+footer p {
+    margin: 0 auto;
+    width: 350px;
+}
