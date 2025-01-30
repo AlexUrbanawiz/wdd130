@@ -1,0 +1,104 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+header {
+    background-color: #175C78;
+}
+
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #FFC933;
+    background-color: #175C78;
+}
+
+nav a:hover {
+    background-color: #175C78;
+    color: #F5F5F5;
+}
+
+.title {
+    color: #175C78
+}
+
+h4{
+    color: #175C78
+}
+
+.book, .join {
+    text-decoration: none;
+    color: #175C78;
+    background-color: #FFC933;
+} 
+
+.book:hover, .join:hover {
+    color: #F5F5F5;
+    background-color: #175C78;
+}
+
+.logo {
+    width: 80px;
+}
+
+.icon {
+    width: 80px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.msg {
+    background-color: #175C78;
+}
+
+.msg h2 {
+    color:#F5F5F5;
+}
+
+.msg p {
+    color:#F5F5F5;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+
+}
+
+footer {
+    background-color: #175C78;
+    color: #F5F5F5;
+}
+
+footer p {
+    font-size: 1.2em;
+} 
+footer p a:hover{
+    text-decoration: underline;
+} 
+
+footer a {
+    text-decoration: none;
+    background-color: #175C78;
+    color: #F5F5F5;
+}
+
+footer a:hover {
+    background-color: #175C78;
+    color: #FFC933;
+}
