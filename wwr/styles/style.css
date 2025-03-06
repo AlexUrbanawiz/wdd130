@@ -315,6 +315,7 @@ footer .social img {
     font-family: Lato, Helvetica, sans-serif;
     font-size: .93em;
     padding-bottom: 15px;
+    padding-right: 10px;
 }
 
 
@@ -346,8 +347,12 @@ footer .social img {
     color:#F5F5F5;
     font-family: Lato, Helvetica, sans-serif;
     font-size: .85em;
+    line-height: 1.5em;
     padding: 15px 10px;
+    margin: 0;
 }
+
+
 
 
 .content-block3 {
@@ -379,7 +384,7 @@ footer .social img {
     color:#175C78;
     font-family: Lato, Helvetica, sans-serif;
     font-size: .85em;
-    padding: 15px 10px;
+    padding: 15px 15px;
 }
 
 
