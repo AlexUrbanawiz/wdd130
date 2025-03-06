@@ -239,7 +239,148 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* Page 2 CSS */
+#banner {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* margin-top: -100px;  */
+}
 
+#banner-box {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    z-index: -1 ;
+}
+
+#banner-msg {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin: 0;
+}
+
+#banner-msg h1{
+    text-align: center;
+    font-family: Georgia, French Canon, Cambria;
+    color:#175C78;
+    margin: 10px;
+}
+
+#banner-img {
+    width: 100%;
+}
+
+.page-2-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.gap1{
+    width: 100%;
+    height: 75px;
+    background-color: #F5F5F5;
+    grid-row: 1;
+}
+.gap2{
+    width: 100%;
+    height: 75px;
+    background-color: #F5F5F5;
+    grid-row: 4;
+}
+.content-block1 {
+    width: 100%;
+    height: 500px;
+    background-color: #175C78;
+    grid-column: 1/10;
+    grid-row: 2/3;
+}
+
+.content-block1 img {
+    padding: 55px 30px;
+}
+
+.heading-div1 {
+    grid-row: 2;
+    grid-column: 5/10;
+    width: 100%;
+    text-align: center;
+}
+.heading-div1 h3 {
+    color: #F5F5F5;
+    font-family: Georgia, French Canon, Cambria;
+    font-size: 30px;
+}
+
+.heading-div1 p {
+    color:#F5F5F5;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: .93em;
+    padding-bottom: 15px;
+}
+
+
+.content-block2 {
+    width: 100%;
+    height: 900px;
+    background-color: #F26430;
+    grid-column: 1/5;
+    grid-row: 5/10;
+}
+
+.heading-div2 img {
+    width: 80%;
+}
+
+.heading-div2 {
+    grid-row: 5;
+    grid-column: 1/5;
+    width: 100%;
+    text-align: center;
+}
+.heading-div2 h3 {
+    font-family: Georgia, French Canon, Cambria;
+    color: #F5F5F5;
+    font-size: 30px;
+}
+
+.heading-div2 p {
+    color:#F5F5F5;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: .85em;
+    padding: 15px 10px;
+}
+
+
+.content-block3 {
+    width: 100%;
+    height: 900px;
+    background-color: #FFC933;
+    grid-column: 6/10;
+    grid-row: 5/10;
+}
+
+.heading-div3 {
+    grid-row: 5;
+    grid-column: 6/10;
+    width: 100%;
+    text-align: center;
+}
+
+.heading-div3 img {
+    width: 80%;
+}
+
+.heading-div3 h3 {
+    font-family: Georgia, French Canon, Cambria;
+    color: #175C78;
+    font-size: 30px;
+}
+
+.heading-div3 p {
+    color:#175C78;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: .85em;
+    padding: 15px 10px;
+}
 
 
 @media screen and (max-width: 900px) {
