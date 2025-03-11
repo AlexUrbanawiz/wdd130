@@ -394,6 +394,7 @@ body {
 }
 
 form {
+    margin-top: 100px;
     display: inline-block;
     /* Form outline */
     padding: 1em;
