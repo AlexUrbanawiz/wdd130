@@ -220,6 +220,7 @@ footer p {
     font-size: 1.2em;
     font-family: Lato, Helvetica, sans-serif;
 } 
+
 footer p a:hover{
     text-decoration: underline;
 } 

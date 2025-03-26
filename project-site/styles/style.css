@@ -218,3 +218,279 @@ footer p a:hover{
 footer .socials img {
     padding: 0 15px;
 }
+
+
+
+/* Page 2 */
+
+/* Title bar */
+.title-bar {
+    width: 98%;
+    background-color: #A1E8AF;
+    border: solid 5px #3D2645;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.title-bar h1 {
+    color: #3D2645;
+}
+
+/* Project 1 */
+.project-1-grid {
+    display: grid;
+    grid-template-columns: repeat(1fr, 7);
+    margin: 200px auto;
+}
+
+.project-1 {
+    grid-column: 1/7;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    background-color: #747C92;
+    text-align: center;
+    border: solid 5px #A1E8AF;
+    margin: 0 auto;
+}
+
+.project-1 h2 {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.project-1 p {
+    grid-column: 1/2;
+    grid-row: 2;
+    margin-top: -80px;
+    padding: 25px;
+    color: #F5EFFF;
+}
+
+.project-1 img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin: 80px auto;
+    width: 80%;
+}
+
+/* Diamonds */
+.diamond1, .diamond2, .diamond3, .diamond4 {
+    width: 100px;
+    height: 100px;
+    background-color: #3D2645;
+    transform: rotate(45deg);
+    margin-top: -40px;
+}
+
+
+.diamond1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 30px;
+}
+
+.diamond2 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.diamond3 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.diamond4 {
+    grid-column: 6;
+    grid-row: 3;
+    margin-right: 60px;
+}
+
+/* Project 2 */
+
+.project-2-grid {
+    display: grid;
+    grid-template-columns: 5% 40% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.project-2 {
+    grid-column: 2;
+    grid-row: 1/8;
+    background-color: #747C92;
+    border: solid 5px #A1E8AF;
+    width: 100%;
+    text-align: center;
+    /* margin-left: 125px; */
+}
+
+.project-2 img {
+    width: 60%;
+}
+
+.project-2 p {
+    padding: 20px;
+    color: #F5EFFF;
+}
+
+/* Squares and Rects */
+.square1, .square2, .square3, .square4, .square5 {
+    width: 80px;
+    height: 80px;
+    background-color: #A1E8AF;
+}
+
+.square1 {
+    grid-row: 2;
+    grid-column: 4/5;
+}
+
+.square2 {
+    grid-row: 1;
+    grid-column: 7/8;
+}
+
+.square3 {
+    grid-row: 5;
+    grid-column: 6/7;
+}
+
+.square4 {
+    grid-row: 6;
+    grid-column: 3/4;
+    margin: 0 30px;
+}
+
+.square5 {
+    grid-column: 8/9;
+    grid-row: 6;
+}
+
+.rect1, .rect2 {
+    width: 240px;
+    height: 80px;
+    background-color: #3D2645;
+}
+
+.rect1 {
+    grid-column: 3/6;
+    grid-row: 4;
+    margin: 0 80px;
+}
+
+.rect2 {
+    grid-row: 3;
+    grid-column: 6/9;
+}
+
+.rect3 {
+    width: 90%;
+    height: 80px;
+    background-color: #747C92;
+    grid-column: 3/10;
+    grid-row: 7;
+    margin: 0 auto;
+}
+
+
+
+/* Project 3 */
+
+.project-3 {
+    width: 95%;
+    margin: 150px auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 100px, 386px, 100px;
+    grid-template-columns: 347px, 347px;
+    border: solid 5px #A1E8AF;
+    background-color: #747C92;
+}
+
+
+.project-3 h1 {
+    grid-row: 1;
+}
+
+.project-3 .split-paragraph{
+    margin: 30px auto;
+    grid-row: 2;
+    grid-column: 1/2;
+    width: 500px;
+    font-size: 18px;
+    color: #F5EFFF;
+}
+
+.split-image-box {
+    grid-row: 2;
+    grid-column: 1/2;
+}
+
+.hover-text {
+    grid-row: 3;
+    grid-column: 1/2;
+    color: #F5EFFF;
+}
+
+.split-image {
+    --n:2;    /* number of tiles*/
+    --d:0px; /* the distance of top/bottom movement */
+    --s:1.8;  /* control the horizontal distance  1>= (1:no distance)*/
+    
+    width: 694px;
+    height: 386px;
+    display:inline-block;
+    box-sizing:border-box;
+    margin:30px;
+    position:relative;
+    overflow:hidden;
+    background-image: url("../images/The Tower.png");
+    background-size: 0 0;
+    transition:0.5s;
+}
+
+
+
+
+  .split-image > * {
+    position: absolute;
+    top: var(--d);
+    left: 0;
+    right: 0;
+    bottom: var(--d);
+    background-image: inherit;
+    background-size: cover;
+    -webkit-mask:linear-gradient(#fff,#fff) no-repeat;
+    -webkit-mask-size:calc(100%/var(--n) + 1px) 100%;
+    -webkit-mask-position:var(--p) 50%;
+            mask:linear-gradient(#fff,#fff) no-repeat;
+            mask-size:calc(100%/var(--n) + 1px) 100%;
+            mask-position:var(--p) 50%;
+     transition:inherit;
+     transform-origin:var(--p) 50%;
+  }
+  
+  /* we define as many as possible to cover the max value used */
+  .split-image > :nth-child(1)  {--p:calc(0*100%/(var(--n) - 1));}
+  .split-image > :nth-child(2)  {--p:calc(1*100%/(var(--n) - 1));}
+  .split-image > :nth-child(3)  {--p:calc(2*100%/(var(--n) - 1));}
+  .split-image > :nth-child(4)  {--p:calc(3*100%/(var(--n) - 1));}
+  .split-image > :nth-child(5)  {--p:calc(4*100%/(var(--n) - 1));}
+  .split-image > :nth-child(6)  {--p:calc(5*100%/(var(--n) - 1));}
+  .split-image > :nth-child(7)  {--p:calc(6*100%/(var(--n) - 1));}
+  .split-image > :nth-child(8)  {--p:calc(7*100%/(var(--n) - 1));}
+  .split-image > :nth-child(9)  {--p:calc(8*100%/(var(--n) - 1));}
+  .split-image > :nth-child(10) {--p:calc(9*100%/(var(--n) - 1));}
+  /**/
+  
+  .split-image:hover > :nth-child(odd){
+     transform:translateY(var(--d))  scale(calc(1/var(--s)));
+  }
+  .split-image:hover > :nth-child(even){
+     transform:translateY(calc(-1*var(--d)))  scale(calc(1/var(--s)));
+  }
+  .split-image:hover {
+     transform:scale(var(--s));
+  }
+
+
