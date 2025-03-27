@@ -162,7 +162,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #A1E8AF;
-    margin-bottom: 300px;
+    margin: 300px 100px;
 }
 
 .current-project h2 {
@@ -170,6 +170,7 @@ nav a:hover {
     grid-row: 1;
     grid-column: 1;
     align-self: center;
+    padding: 20px;
 }
 
 .current-project p {
@@ -239,7 +240,6 @@ footer .socials img {
 /* Project 1 */
 .project-1-grid {
     display: grid;
-    grid-template-columns: repeat(1fr, 7);
     margin: 200px auto;
 }
 
@@ -401,8 +401,6 @@ footer .socials img {
     margin: 150px auto;
     text-align: center;
     display: grid;
-    grid-template-rows: 100px, 386px, 100px;
-    grid-template-columns: 347px, 347px;
     border: solid 5px #A1E8AF;
     background-color: #747C92;
 }
@@ -450,7 +448,7 @@ footer .socials img {
 }
 
 
-
+/* Add Comment to final: Talked to Sister Anderson about CSS Validation Erorrs, The web component Im using here is bending the rules to work, css validator dosent like it. */
 
   .split-image > * {
     position: absolute;
@@ -466,31 +464,31 @@ footer .socials img {
             mask:linear-gradient(#fff,#fff) no-repeat;
             mask-size:calc(100%/var(--n) + 1px) 100%;
             mask-position:var(--p) 50%;
-     transition:inherit;
-     transform-origin:var(--p) 50%;
-  }
-  
+    transition:inherit;
+    transform-origin:var(--p) 50%;
+}
+
   /* we define as many as possible to cover the max value used */
-  .split-image > :nth-child(1)  {--p:calc(0*100%/(var(--n) - 1));}
-  .split-image > :nth-child(2)  {--p:calc(1*100%/(var(--n) - 1));}
-  .split-image > :nth-child(3)  {--p:calc(2*100%/(var(--n) - 1));}
-  .split-image > :nth-child(4)  {--p:calc(3*100%/(var(--n) - 1));}
-  .split-image > :nth-child(5)  {--p:calc(4*100%/(var(--n) - 1));}
-  .split-image > :nth-child(6)  {--p:calc(5*100%/(var(--n) - 1));}
-  .split-image > :nth-child(7)  {--p:calc(6*100%/(var(--n) - 1));}
-  .split-image > :nth-child(8)  {--p:calc(7*100%/(var(--n) - 1));}
-  .split-image > :nth-child(9)  {--p:calc(8*100%/(var(--n) - 1));}
-  .split-image > :nth-child(10) {--p:calc(9*100%/(var(--n) - 1));}
-  /**/
-  
-  .split-image:hover > :nth-child(odd){
-     transform:translateY(var(--d))  scale(calc(1/var(--s)));
-  }
-  .split-image:hover > :nth-child(even){
-     transform:translateY(calc(-1*var(--d)))  scale(calc(1/var(--s)));
-  }
-  .split-image:hover {
-     transform:scale(var(--s));
-  }
+.split-image > :nth-child(1)  {--p:calc(0*100%/(var(--n) - 1));}
+.split-image > :nth-child(2)  {--p:calc(1*100%/(var(--n) - 1));}
+.split-image > :nth-child(3)  {--p:calc(2*100%/(var(--n) - 1));}
+.split-image > :nth-child(4)  {--p:calc(3*100%/(var(--n) - 1));}
+.split-image > :nth-child(5)  {--p:calc(4*100%/(var(--n) - 1));}
+.split-image > :nth-child(6)  {--p:calc(5*100%/(var(--n) - 1));}
+.split-image > :nth-child(7)  {--p:calc(6*100%/(var(--n) - 1));}
+.split-image > :nth-child(8)  {--p:calc(7*100%/(var(--n) - 1));}
+.split-image > :nth-child(9)  {--p:calc(8*100%/(var(--n) - 1));}
+.split-image > :nth-child(10) {--p:calc(9*100%/(var(--n) - 1));}
+/**/
+
+.split-image:hover > :nth-child(odd){
+    transform:translateY(var(--d))  scale(calc(1/var(--s)));
+}
+.split-image:hover > :nth-child(even){
+    transform:translateY(calc(-1*var(--d)))  scale(calc(1/var(--s)));
+}
+.split-image:hover {
+    transform:scale(var(--s));
+}
 
 
