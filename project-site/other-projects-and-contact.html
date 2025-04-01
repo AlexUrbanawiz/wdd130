@@ -18,10 +18,13 @@
         </nav>
     </header>
     <main>
-        <h1>Other Projects and Contact</h1>
-        <div class="projcet-4">
+    <div class="page-3-content">
+        <div class="title-bar">
+            <h1>Other Projects and Contact</h1>
+        </div>
+        <div class="project-4">
             <h2>Recipe Planner</h2>
-            <img src="images/recipe-book.png" alt="Recipe Planner Icon">
+            <img src="images/meal-planner.png" alt="Recipe Planner Icon">
             <p>This is a python project that is designed to help people figure out what to eat. You can add recipes via csv file or through the GUI. You can rank the importance of taste, time, and cost for each recipe, then after they are sorted you can pick on and see its recipe. This was a decently complicated project that I decided to make because I wanted something to help me with my issues deciding what to make for dinner when I would forget the various options I had.</p>
         </div>
         <div class="project-5">
@@ -29,7 +32,7 @@
             <img src="images/Tavern Keep Image.png" alt="Tavern Keep Title Screen">
             <p>A simple text based simulator written in C#, where you attempt to run a tavern. At the start of each day you can stock up on food and check your finances, then when the day starts you get customers who have a preferred meal, and if you serve them their preferred meal fast enough then you get full cash, but if you take too long or serve them the wrong food then you will get reduced money.  While there aren't real consequences for serving the average customer incorrectly, beware of the inspector. The inspector will arrive and not only be harsher than the average customer but if you mess up serving them then your tavern will be shut down and the game over. As you progress through the days you serve more customers, and inspectors appear more frequently.</p>
         </div>
-        <div id="feedback"></div>
+        <div class="feedback">
             <form action="#" method="post">
                 <p>
                     <label for="name">Name:</label>
@@ -48,6 +51,8 @@
                 </p>
                 
             </form>
+        </div>
+    </div>
     </main>
     <footer>
         <p>A. Urbanawiz Projects</p>
@@ -64,5 +69,22 @@
             </a>
         </div>
     </footer>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
 </html>

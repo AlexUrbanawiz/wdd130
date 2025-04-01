@@ -134,6 +134,7 @@ nav a:hover {
     padding: 15px 20px;
     margin-top: 50px;
     border-radius: 5px;
+    transition: .5s;
 }
 
 .game-dev-button:hover, .other-projects-button:hover {
@@ -492,3 +493,102 @@ footer .socials img {
 }
 
 
+/* Page 3 */
+.page-3-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.page-3-content .title-bar {
+    grid-column: 1/6;
+    grid-row: 1;
+}
+
+
+/* Project 4 */
+.project-4 {
+    background-color: #747C92;
+    border: solid 5px #A1E8AF;
+    grid-column: 1/4;
+    margin: 100px 50px;
+    grid-row: 2;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-4 h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.project-4 p {
+    padding: 20px;
+    color: #F5EFFF;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.project-4 img {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    padding: 15px;
+}
+
+
+/* Project 5 */
+
+.project-5 {
+    background-color: #747C92;
+    border: solid 5px #A1E8AF;
+    grid-row: 3;
+    grid-column: 3/6;
+    text-align: center;
+    margin: 100px 50px;
+}
+
+.project-5 p {
+    padding: 20px;
+    color: #F5EFFF;
+}
+
+
+.feedback {
+    background-color: #A1E8AF;
+    border: solid 7px #3D2645;
+    grid-row: 4;
+    grid-column: 2/5;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.feedback p {
+    font-size: 1.5em;
+    padding: 20px;
+    color: #3D2645;
+}
+
+.feedback input {
+    width: 30%;
+    height: 2.4em;
+}
+
+.feedback textarea {
+    width: 30%;
+    height: 2.4em;
+}
+
+.feedback button {
+    width: 30%;
+    height: 2em;
+    font-size: 20px;
+    color: #A1E8AF;
+    background-color: #3D2645;
+    transition: .5s;
+}
+
+.feedback button:hover {
+    background-color: #F5EFFF;
+    color: #3D2645;
+}
