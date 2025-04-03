@@ -592,3 +592,14 @@ footer .socials img {
     background-color: #F5EFFF;
     color: #3D2645;
 }
+
+#feedbackbanner {
+    background-color: #F5EFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
